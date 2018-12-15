@@ -11,4 +11,13 @@
     :defer t
     :mode "\\.k\\'"
   )
+
 )
+
+(defun k-framework/post-init-k3-mode ()
+  (spacemacs/set-leader-keys-for-major-mode 'k3-mode
+    "c" 'compile
+    )
+)
+
+
